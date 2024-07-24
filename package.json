@@ -5,8 +5,12 @@
   "main": "build/main.js",
   "bin": "build/main.js",
   "scripts": {
-    "build": "tsc && pkg ."
-  },
+    "build": "tsc",
+    "dist:win": "pkg . --targets node18-win-x64 --out-path dist/win",
+    "dist:macos": "pkg . --targets node18-macos-x64 --out-path dist/macos",
+    "dist:linux": "pkg . --targets node18-linux-x64 --out-path dist/linux",
+    "dist:all": "npm run build && npm run dist:win && npm run dist:macos & npm run dist:linux"
+  },  
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -19,13 +23,6 @@
     "zset-lang": "^1.1.0"
   },
   "pkg": {
-    "scripts": "build/**/*.js",
-    "targets": [
-      "node18-linux-x64",
-      "node18-macos-x64",
-      "node18-win-x64"
-    ],
-    "outputPath": "dist",
-    "output": "zset"
+    "scripts": "build/**/*.js"
   }
 }
