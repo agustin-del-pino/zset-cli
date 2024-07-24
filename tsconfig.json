@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "outDir": "build",
+        "lib": [
+            "ES2022"
+        ],
+        "sourceMap": true,
+        "module": "CommonJS",
+    },
+    "include": [
+        "src/**/*.ts"
+    ]
+}
