@@ -2,7 +2,7 @@
 The CLI for ZSet Lang
 
 # Donwload
-Got [dist](https://github.com/agustin-del-pino/zset-cli/tree/main/dist) and donwload
+Go to [dist](https://github.com/agustin-del-pino/zset-cli/tree/main/dist) and donwload
 the specific distro.
 
 # Overview
